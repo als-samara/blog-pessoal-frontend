@@ -3,7 +3,7 @@ import './App.css'
 import Footer from './components/footer/Footer'
 import NavBar from './components/navBar/NavBar'
 import Home from './pages/home/Home'
-import Cadastro from './pages/cadastro/Cadastro'
+import Login from './pages/login/Login'
 
 function App() {
 
@@ -15,8 +15,8 @@ function App() {
         <div className='min-h-[80vh]'>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/cadadtro" element={<Cadastro />} />
           </Routes>
         </div>
         <Footer />

@@ -11,7 +11,8 @@ function Navbar() {
                     </div>
 
                     <div className='flex gap-3 cursor-pointer'>
-                        <div className='hover:bg-rose-900    py-2 px-4 rounded-3xl duration-300'>Postagens</div>
+                        <Link to='/login' className='hover:bg-rose-900 py-2 px-4 rounded-3xl duration-300'>Login</Link>
+                        <div className='hover:bg-rose-900 py-2 px-4 rounded-3xl duration-300'>Postagens</div>
                         <div className='hover:bg-rose-900 py-2 px-4 rounded-3xl duration-300'>Temas</div>
                         <div className='hover:bg-rose-900 py-2 px-4 rounded-3xl duration-300'>Cadastrar tema</div>
                         <div className='hover:bg-rose-900 py-2 px-4 rounded-3xl duration-300'>Perfil</div>
