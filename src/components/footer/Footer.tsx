@@ -1,18 +1,22 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
+import { LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 
 function Footer() {
 
+    let data = new Date().getFullYear()
+
     return (
         <>
-            <div className="flex justify-center bg-teal-600 text-white py-10">
+            <div className="flex justify-center bg-slate-700 text-white py-10">
                 <div className="container flex flex-col items-center py-4">
-                    <p className='text-xl font-bold'>Blog pessoal Generation | Copyright: </p>
-                    <p className='text-lg'>Acesse nossas redes sociais</p>
-                    <div className='flex gap-2'>
-                        <GithubLogo size={48} weight='bold'/>
-                        <LinkedinLogo size={48} weight='bold' />
-                        <InstagramLogo size={48} weight='bold' />
-                        <FacebookLogo size={48} weight='bold' />
+                    <p className='text-xl font-bold'>Blog Pessoal | Copyright: </p>
+                    <p className='text-lg pt-2 font-bold'>Contato</p>
+                    <div className='flex gap-2 pt-2'>
+                        <a href="https://github.com/als-samara" target="_blank" className='hover:scale-90'>
+                            <GithubLogo size={44}/>
+                        </a>
+                        <a  href='https://www.linkedin.com/in/samara-almeida-als/' target="_blank" className='hover:scale-90'>
+                            <LinkedinLogo size={44}/>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// criação de instância do axios
 const api = axios.create({
     baseURL: 'https://blogpessoal-6bdj.onrender.com'
 })
