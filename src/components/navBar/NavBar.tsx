@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <>
-            <div className='w-full bg-black text-white flex justify-center py-9 px-16'>
+            <div className='w-full bg-amber-400 text-white flex justify-center py-10 px-16'>
                 <div className="container flex justify-between text-lg items-center">
                     <div className='items-center'>
                         <Link to='/home' className="text-2xl font-bold">Blog Pessoal</Link>

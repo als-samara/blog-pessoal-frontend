@@ -3,7 +3,7 @@ function Home() {
 
     return (
         <>
-            <div id="container" className="bg-stone-300 flex justify-center py-14">
+            <div id="container" className="bg-stone-50 flex justify-center py-14">
                 <div id="subcontainer" className="container grid grid-cols-2">
 
                     <div id="text" className="flex flex-col gap-4 items-center justify-center py-4">
