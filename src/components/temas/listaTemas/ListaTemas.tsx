@@ -7,13 +7,13 @@ import { AuthContext } from '../../../contexts/AuthContext';
 
 import Tema from '../../../models/Tema';
 import CardTemas from '../cardTemas/CardTemas';
-import { Dna } from '@phosphor-icons/react/dist/icons/Dna';
+import { DNA } from 'react-loader-spinner';
 
 function ListaTemas() {
 
-    const [temas, setTemas] = useState<Tema[]>([]);
-
     const navigate = useNavigate();
+    
+    const [temas, setTemas] = useState<Tema[]>([]);
 
     const { usuario, handleLogout } = useContext(AuthContext);
     const token = usuario.token;
@@ -21,7 +21,7 @@ function ListaTemas() {
     async function buscarTemas() {
         try {
             await buscar('/temas', setTemas, {
-                headers: { Authorization: token },
+                headers: { Authorization: token }
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
@@ -46,11 +46,14 @@ function ListaTemas() {
         <>
             {temas.length === 0 && (
                 <div style={{ display: 'block' }} className="dna-wrapper mx-auto">
-                    <Dna
-                        height={200}
-                        width={200}
-                        aria-label="dna-loading"
-                    />
+                    <DNA
+                    visible={true}
+                    height="200"
+                    width="200"
+                    ariaLabel="dna-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="dna-wrapper mx-auto"
+                />
                 </div>
             )}
 

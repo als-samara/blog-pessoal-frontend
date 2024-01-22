@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://db-blogpesoal-x141.onrender.com/swagger-ui/index.html'
+    baseURL: 'https://blogpesoal-6bdj.onrender.com'
 })
 
 export const login = async (url: string, dados: Object, setDados: Function) => {
@@ -32,3 +32,5 @@ export const atualizar = async (url: string, dados: Object, setDados: Function, 
 export const deletar = async (url: string, header: Object) => {
     await api.delete(url, header)
 }
+
+export default api

@@ -55,6 +55,7 @@ function Cadastro() {
 
             } catch (error) {
                 alert('Erro ao cadastrar o Usuário')
+                console.log(error)
             }
 
         } else {
