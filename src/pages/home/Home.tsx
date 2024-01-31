@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Home() {
 
@@ -11,9 +12,9 @@ function Home() {
                         <p className="text-xl">Expresse aqui os seus pensamentos e opiniões...</p>
 
                         <div className="flex justify-around gap-4">
-                            <div className="rounded border-black border-solid border-2 px-4 py-2">
+                            <Link to='/cadastroPostagem' className="rounded border-black border-solid border-2 px-4 py-2">
                                 Nova Postagem
-                            </div>
+                            </Link>
                             {/* aqui vai o outro botão */}
                         </div>
                     </div>
