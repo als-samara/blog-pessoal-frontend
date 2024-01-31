@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem'
+import { format } from "date-fns";
+import { ptBR } from 'date-fns/locale';
 
 interface CardPostagensProps {
     post: Postagem
 }
 
 function CardPostagens({ post }: CardPostagensProps) {
+
+    function dateFormatter(data: string) {
+        const dataLocal = new Date(data); // Cria um objeto Date com a data fornecida
+        const dataLocalFormatada = format(dataLocal, "EEEE', 'd 'de' MMMM 'de' yyyy 'às' HH:mm:ss", { locale: ptBR }); // Formata a data local
+
+        return dataLocalFormatada;
+    }
     return (
         <div className='border-slate-900 border 
             flex flex-col rounded overflow-hidden justify-between'>

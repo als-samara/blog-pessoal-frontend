@@ -133,12 +133,12 @@ function FormularioPostagem() {
     const carregandoTema = tema.descricao === '';
 
     return (
-        <div className="container flex flex-col mx-auto items-center">
-            <h1 className="text-4xl text-center my-8">
+        <div className="container flex flex-col mx-auto items-center py-20">
+            <h1 className="text-4xl text-center mb-8">
                 {id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}
             </h1>
 
-            <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaPostagem}>
+            <form className="flex flex-col w-2/5 gap-6" onSubmit={gerarNovaPostagem}>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="titulo">Título da Postagem</label>
                     <input
@@ -182,9 +182,8 @@ function FormularioPostagem() {
                 <button
                     type='submit'
                     disabled={carregandoTema}
-                    className='flex justify-center rounded disabled:bg-slate-200 bg-indigo-400 
-                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-2'
-                >
+                    className='flex justify-center disabled:bg-slate-200 bg-[#ff725e]
+                    hover:bg-rose-900 text-white font-bold w-1/2 mx-auto mb-2 mt-6 py-3 rounded-2xl'>
                     {isLoading ?
                         <RotatingLines
                             strokeColor="white"
