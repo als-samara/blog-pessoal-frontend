@@ -28,12 +28,10 @@ function Navbar() {
 
                     <div className='flex gap-3 cursor-pointer'>
                         <Link to='/home' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Home</Link>
-                        
-                        <Link to='/listaPostagens' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Postagens</Link>
+                        <Link to='/postagens' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Postagens</Link>
                         <Link to='/temas' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Temas</Link>
                         <Link to='/cadastroTema' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Cadastrar Tema</Link>
-                        <div className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Perfil</div>
-
+                        <Link to='/profile' className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Perfil</Link>
                         <Link to='' onClick={logout} className='hover:bg-[#ff725e] py-1 px-4 rounded-3xl duration-300'>Sair</Link>
                     </div>
                 </div>
