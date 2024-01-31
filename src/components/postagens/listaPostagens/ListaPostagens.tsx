@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Dna } from '@phosphor-icons/react/dist/icons/Dna';
 
 import { buscar } from '../../../service/Service';
 import { toastAlerta } from '../../../utils/toastAlert';
@@ -8,6 +7,7 @@ import { AuthContext } from '../../../contexts/AuthContext';
 
 import Postagem from '../../../models/Postagem';
 import CardPostagens from '../cardPostagens/CardPostagens';
+import { DNA } from 'react-loader-spinner';
 
 function ListaPostagens() {
 
@@ -49,10 +49,13 @@ function ListaPostagens() {
         <>
             {postagens.length === 0 && (
                 <div style={{ display: 'block' }} className="dna-wrapper mx-auto">
-                    <Dna
-                        height={200}
-                        width={200}
-                        aria-label="dna-loading"
+                    <DNA
+                        visible={true}
+                        height="200"
+                        width="200"
+                        ariaLabel="dna-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="dna-wrapper mx-auto"
                     />
                 </div>
             )}
