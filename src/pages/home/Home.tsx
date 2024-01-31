@@ -13,7 +13,7 @@ function Home() {
 
                         <div className="flex justify-around gap-4">
                             <Link to='/cadastroPostagem' className="rounded border-black border-solid border-2 px-4 py-2">
-                                Nova Postagem
+                                Ver Produtos
                             </Link>
                             {/* aqui vai o outro botão */}
                         </div>
